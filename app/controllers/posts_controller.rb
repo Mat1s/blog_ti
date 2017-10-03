@@ -34,10 +34,10 @@ class PostsController < ApplicationController
   private 
 
   def permit_params
- 		params.fetch(:post, {}).permit(:title, :body, :ip, :user_id)
- 	end
+  	params.fetch(:post, {}).permit(:title, :body, :ip, :user_id)
+  end
 
- 	def ratings_params
- 		params.fetch(:post, {}).permit(:grade)
- 	end
+  def ratings_params
+ 	params.fetch(:post, {}).permit(:grade)
+ end
 end
