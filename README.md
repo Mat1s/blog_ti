@@ -1,6 +1,6 @@
 # README
 #1
-select min(u1.id), max(u2.id), u1.group_id 
+select min(u1.id), max(u2.id), u1.group_id </br>
 from users u1 inner join users u2
 where u2.group_id = u1.group_id
 and (u2.id -u1.id) = 1
